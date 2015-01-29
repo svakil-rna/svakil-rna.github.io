@@ -13,10 +13,12 @@
       loc_id = window.location.hash.substring(1);
       url_test = "http://mjohnston.nw.dev.tripadvisor.com/Attractions-g"+loc_id;
       url_live = "http://www.tripadvisor.com/Attractions-g"+loc_id;
+      document.getElementById("live").src = url_live
+      document.getElementById("test").src = url_test
   }
  alert (url);
 </script>
-     <iframe src="about:blank" frameborder="0" scrolling="yes" style="overflow-x:auto" height="10240" width="700" align="left"> </iframe>  
-     <iframe src="http://mjohnston.nw.dev.tripadvisor.com/Attractions-g187791-Activities-Rome_Lazio.html#foo" frameborder="0" style="overflow-x:auto" scrolling="yes" height="10240" width="700" align="right"> </iframe>
+     <iframe id="live" src="about:blank" frameborder="0" scrolling="yes" style="overflow-x:auto" height="10240" width="700" align="left"> </iframe>  
+     <iframe id="test" src="about:blank" frameborder="0" style="overflow-x:auto" scrolling="yes" height="10240" width="700" align="right"> </iframe>
 </body>
 </html>

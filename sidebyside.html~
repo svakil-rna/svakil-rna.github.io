@@ -6,14 +6,17 @@
 </head>
 <body>
 <script>
+  var loc_id = 187791;
+  var url_test = "about:blank"
+  var url_live = "about:blank"
   if(window.location.hash) {
-      var loc_id = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-      var url = "http://www.tripadvisor.com/Attractions-g"+loc_id
-      alert (loc_id);
-  } else {
+      loc_id = window.location.hash.substring(1);
+      url_test = "http://mjohnston.nw.dev.tripadvisor.com/Attractions-g"+loc_id;
+      url_live = "http://www.tripadvisor.com/Attractions-g"+loc_id;
   }
+ alert (url);
 </script>
-     <iframe src=url frameborder="0" scrolling="yes" style="overflow-x:auto" height="10240" width="700" align="left"> </iframe>  
+     <iframe src="about:blank" frameborder="0" scrolling="yes" style="overflow-x:auto" height="10240" width="700" align="left"> </iframe>  
      <iframe src="http://mjohnston.nw.dev.tripadvisor.com/Attractions-g187791-Activities-Rome_Lazio.html#foo" frameborder="0" style="overflow-x:auto" scrolling="yes" height="10240" width="700" align="right"> </iframe>
 </body>
 </html>
